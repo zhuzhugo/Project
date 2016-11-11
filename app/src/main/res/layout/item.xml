@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/group"
+        android:orientation="horizontal"
+        android:layout_alignParentBottom="true"
+        android:background="@mipmap/bottom_bg">
+        <RadioButton
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:button="@null"
+            android:background="@null"
+            android:drawableTop="@drawable/hot_active"
+            android:textColor="@drawable/textcolor"
+            android:checked="true"
+            android:tag="0"
+            android:text="新闻"
+            android:gravity="center"
+
+            />
+        <RadioButton
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:button="@null"
+            android:background="@null"
+            android:drawableTop="@drawable/business_active"
+            android:textColor="@drawable/textcolor"
+            android:tag="1"
+            android:text="笑话"
+            android:gravity="center"
+            />
+        <RadioButton
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:button="@null"
+            android:background="@null"
+            android:drawableTop="@drawable/icon_shijie_active"
+            android:textColor="@drawable/textcolor"
+            android:tag="2"
+            android:text="精选"
+            android:gravity="center"
+            />
+        <RadioButton
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:button="@null"
+            android:background="@null"
+            android:drawableTop="@drawable/my_active"
+            android:textColor="@drawable/textcolor"
+            android:tag="3"
+            android:text="我的"
+            android:gravity="center"
+            />
+
+    </RadioGroup>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/group"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/fl"></FrameLayout>
+
+</RelativeLayout>
